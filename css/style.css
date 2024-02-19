@@ -1,6 +1,7 @@
 /****** General ***********/
 * {
   font-family: "Raleway", sans-serif;
+  flex-wrap: wrap;
 }
 
 :root {
@@ -45,6 +46,11 @@ body {
 .linkHeberge {
   margin-right: 40px;
   margin-top: 0%;
+  font-weight: 400px;
+}
+.linkActivite {
+  font-weight: 400;
+  font-family: "Raleway", sans-serif;
 }
 .linkHeberge:hover,
 .linkActivite:hover {
@@ -61,10 +67,12 @@ a {
 /****** Navigation ***********/
 .infoTitre h3 {
   font-size: 22px;
+  font-weight: 700;
 }
 .infoTitre p {
   margin-top: -15px;
   font-size: 16px;
+  font-weight: 400;
 }
 .section-title {
   margin: 0;
@@ -106,6 +114,81 @@ input::placeholder {
   font-size: 18px;
   font-weight: 700;
   border: none;
+}
+
+/****** Filtres ********/
+.filtres {
+  margin-top: -20px;
+  display: flex;
+  align-content: center;
+  height: auto;
+}
+.filtreTitre {
+  align-content: center;
+  padding-top: 15px;
+  margin-top: 30px;
+}
+
+.filtreListe {
+  list-style-type: none;
+  align-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.filtreListe li {
+  display: inline-flex;
+  padding-right: 20px;
+}
+#iconEco,
+#iconMan,
+#iconHearth,
+#iconFire {
+  padding-right: 10px;
+}
+.btnEco,
+.btnFamillial,
+.btnRomantique,
+.btnPepite {
+  background-color: transparent;
+  padding: 15px 14px 15px 14px;
+  border-radius: 25px;
+  width: auto;
+  border: 2px solid #d9d9d9;
+  font-weight: 700;
+  font-size: 17px;
+  margin-left: -10px;
+}
+.btnEco {
+  margin-left: -20px;
+}
+
+.btnEco:hover,
+.btnFamillial:hover,
+.btnRomantique:hover,
+.btnPepite:hover {
+  background-color: #deebff;
+}
+.infLogement {
+  display: flex;
+  height: 24px;
+  margin-bottom: 40px;
+}
+.infLogo {
+  align-content: end;
+  justify-content: end;
+}
+.btnInfLogo {
+  background-color: white;
+  border: 1px solid #d9d9d9;
+  border-radius: 20px;
+}
+.infParagraphe {
+  margin: -15px;
+  padding-left: 20px;
+  height: auto;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
 }
 .card {
   background-color: white;
