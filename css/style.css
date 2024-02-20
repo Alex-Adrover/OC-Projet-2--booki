@@ -245,7 +245,7 @@ input::placeholder {
   margin-top: 33px;
   width: 210px;
   height: 190px;
-  margin-right: 25px;
+  margin-right: 45px;
 }
 .hebergements-cards img {
   width: 250px;
@@ -274,7 +274,11 @@ input::placeholder {
 .hebergements-cards .card-rating {
   margin-bottom: 5px;
 }
-
+.lien-affiché {
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 50px;
+}
 /****** Populaires ***********/
 .populaires {
   width: 32%;
