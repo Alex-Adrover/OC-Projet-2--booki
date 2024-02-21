@@ -238,6 +238,7 @@ input::placeholder {
 }
 .hebergements-cards {
   display: flex;
+  justify-content: space-evenly;
   margin-right: -40px;
 }
 .hebergements-cards .card {
@@ -344,6 +345,38 @@ input::placeholder {
 .activite .card-title {
   margin-left: 10px;
 }
+/***** FOOTER ******/
+.foot-link {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f2f2f2;
+  margin-top: 50px;
+  height: 165px;
+  width: 100%;
+}
+.foot-list-un p {
+  font-size: 16px;
+  font-weight: 400px;
+}
+.foot-list-un {
+  margin-left: -30px;
+  margin-top: -10px;
+  width: fit-content;
+}
+.foot-list-deux {
+  height: 165px;
+  width: 400px;
+  margin-right: 10px;
+  margin-top: -10px;
+  width: fit-content;
+}
+.foot-list-trois {
+  height: 165px;
+  width: 400px;
+  margin-top: -10px;
+  margin-left: 40px;
+}
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
@@ -378,6 +411,45 @@ input::placeholder {
 
   .populaires-cards .card-subtitle {
     font-size: 13px;
+  }
+  .activite-title {
+    font-size: 22px;
+    font-weight: 700;
+    margin-left: 40px;
+  }
+  .activite {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .activite img {
+    width: 200px;
+    height: 200px;
+    margin: -5px;
+    border-radius: 20px 20px 0px 0px;
+  }
+  .activite .card-title {
+    margin-left: 10px;
+    font-size: 12px;
+    text-wrap: wrap;
+  }
+  .foot-list-un {
+    margin-left: 30px;
+    margin-top: -10px;
+    margin-right: 100px;
+    width: fit-content;
+  }
+  .foot-list-deux {
+    margin-right: 40px;
+  }
+  .foot-link {
+    justify-content: flex-start;
+  }
+  .foot-list-trois {
+    height: 165px;
+    width: fit-content;
+    margin-top: -10px;
+    margin-left: 100px;
+    padding-right: 0px;
   }
 }
 
