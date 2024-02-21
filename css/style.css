@@ -33,10 +33,7 @@ body {
 .headerContainer {
   display: flex;
   justify-content: space-between;
-  max-width: 1440px;
-  max-height: 79px;
   flex-wrap: wrap;
-  align-content: start;
 }
 .btn-links {
   background: none;
@@ -50,9 +47,11 @@ body {
   width: 61px;
   margin-top: 20px;
 }
+.links {
+  margin-top: 16px;
+}
 .linkHeberge {
   margin-right: 40px;
-  margin-top: 0%;
 }
 .linkActivite {
   font-weight: 400;
@@ -61,7 +60,7 @@ body {
 .linkHeberge:hover,
 .linkActivite:hover {
   border-top: 2px solid #0065fc;
-  padding-top: 20px;
+  padding-top: 15px;
   color: #0065fc;
 }
 a {
@@ -356,7 +355,7 @@ input::placeholder {
 }
 .foot-list-un p {
   font-size: 16px;
-  font-weight: 400px;
+  font-weight: 400;
 }
 .foot-list-un {
   margin-left: -30px;
@@ -430,7 +429,6 @@ input::placeholder {
   .activite .card-title {
     margin-left: 10px;
     font-size: 12px;
-    text-wrap: wrap;
   }
   .foot-list-un {
     margin-left: 30px;
