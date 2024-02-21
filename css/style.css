@@ -34,12 +34,6 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.links button {
-  background: none;
-  text-decoration: none;
-  border: none;
-  font-weight: 400;
-}
 .logo {
   height: 19px;
   width: 61px;
@@ -58,7 +52,7 @@ body {
 .linkHeberge:hover,
 .linkActivite:hover {
   border-top: 2px solid #0065fc;
-  padding-top: 15px;
+  padding-top: 13px;
   color: #0065fc;
 }
 a {
@@ -487,27 +481,16 @@ input::placeholder {
     align-content: center;
     width: 120%;
     height: 2em;
-    padding-top: 5%;
+    padding-top: 3%;
     border-bottom: 2px solid #f2f2f2;
     margin-left: -50px;
     margin-right: -50px;
-    margin-top: -20px;
+    margin-top: -15px;
     flex-wrap: nowrap;
     font-size: 19px;
   }
   .logoContainer {
     padding: 30px 0px 10px 0px;
-  }
-  .links button {
-    border-bottom: 2px solid #d9d9d9;
-    border-top: hidden;
-    width: 100%;
-  }
-
-  .btn-hebergement:hover,
-  .btn-activite:hover {
-    border-top: none;
-    border-bottom: 2px solid #0065fc;
   }
   .linkActivite:hover,
   .linkHeberge:hover {
@@ -552,14 +535,14 @@ input::placeholder {
     object-fit: cover;
   }
   .btnLogo {
-    width: 10%;
+    width: 15%;
     height: 100%;
   }
   .search-logo {
     border-radius: 15px 16px 15px 16px;
     background-color: #0065fc;
     color: white;
-    width: 10%;
+    width: 20%;
     height: 100%;
     margin-left: -20px;
     font-size: 18px;
