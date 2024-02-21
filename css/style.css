@@ -15,10 +15,9 @@
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
 }
 /****** header ***********/
 .main-container {
@@ -35,9 +34,8 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.btn-links {
+.links button {
   background: none;
-  padding: 20px 0px 5px 0px;
   text-decoration: none;
   border: none;
   font-weight: 400;
@@ -104,6 +102,10 @@ a {
   text-decoration: none;
   border: 1px solid #d9d9d9;
 }
+#rechercheMarseille-deux {
+  display: none;
+  visibility: hidden;
+}
 input::placeholder {
   font-weight: 700;
   color: black;
@@ -119,12 +121,16 @@ input::placeholder {
   font-weight: 700;
   border: none;
 }
+.search-logo {
+  display: none;
+  visibility: hidden;
+}
 
 /****** Filtres ********/
 .filtres {
   margin-top: -50px;
   display: flex;
-  align-content: center;
+  align-content: start;
   height: auto;
 }
 .filtreTitre {
@@ -143,16 +149,10 @@ input::placeholder {
   display: inline-flex;
   padding-right: 20px;
 }
-#iconEco,
-#iconMan,
-#iconHearth,
-#iconFire {
+.filtreListe i {
   padding-right: 10px;
 }
-.btnEco,
-.btnFamillial,
-.btnRomantique,
-.btnPepite {
+.filtreListe button {
   background-color: transparent;
   padding: 15px 14px 15px 14px;
   border-radius: 25px;
@@ -162,14 +162,8 @@ input::placeholder {
   font-size: 17px;
   margin-left: -10px;
 }
-.btnEco {
-  margin-left: -20px;
-}
 
-.btnEco:hover,
-.btnFamillial:hover,
-.btnRomantique:hover,
-.btnPepite:hover {
+.filtreListe button:hover {
   background-color: #deebff;
 }
 .infLogement {
@@ -381,6 +375,24 @@ input::placeholder {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+  body {
+    margin: -12px;
+  }
+  .filtres {
+    margin-top: -50px;
+    display: flex;
+    flex-direction: column;
+    align-content: start;
+    height: auto;
+  }
+  .filtreListe button {
+    margin-left: -45px;
+    margin-right: 25px;
+  }
+  .search-logo {
+    display: none;
+    visibility: hidden;
+  }
   .hebergements-and-populaires {
     flex-direction: column;
   }
@@ -449,9 +461,116 @@ input::placeholder {
     margin-left: 100px;
     padding-right: 0px;
   }
+  #rechercheMarseille-deux {
+    display: none;
+    visibility: hidden;
+  }
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-  /* ... */
+  body {
+    margin: -20px;
+    font-family: "Raleway", sans-serif;
+  }
+  /** HEADER **/
+  .headerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 30%;
+    width: 105%;
+  }
+  .links {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 120%;
+    height: 2em;
+    padding-top: 5%;
+    border-bottom: 2px solid #f2f2f2;
+    margin-left: -50px;
+    margin-right: -50px;
+    margin-top: -20px;
+    flex-wrap: nowrap;
+    font-size: 19px;
+  }
+  .logoContainer {
+    padding: 30px 0px 10px 0px;
+  }
+  .links button {
+    border-bottom: 2px solid #d9d9d9;
+    border-top: hidden;
+    width: 100%;
+  }
+
+  .btn-hebergement:hover,
+  .btn-activite:hover {
+    border-top: none;
+    border-bottom: 2px solid #0065fc;
+  }
+  .linkActivite:hover,
+  .linkHeberge:hover {
+    border-top: hidden;
+  }
+
+  /** PARTIE RECHERCHE **/
+  .infofmations {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .recherche {
+    width: 100%;
+  }
+  #rechercheMarseille {
+    font-size: 18px;
+    opacity: 1;
+    text-align: justify;
+    text-decoration: none;
+    border: 1px solid #d9d9d9;
+    width: 75%;
+    display: none;
+    visibility: hidden;
+  }
+  #rechercheMarseille-deux {
+    font-size: 18px;
+    opacity: 1;
+    text-align: justify;
+    text-decoration: none;
+    border: 1px solid #d9d9d9;
+    width: 75%;
+    display: inline;
+    visibility: visible;
+  }
+  .btnLogo {
+    width: 50px;
+    height: 49px;
+  }
+  input::placeholder {
+    width: 500px;
+    object-fit: cover;
+  }
+  .btnLogo {
+    width: 10%;
+    height: 100%;
+  }
+  .search-logo {
+    border-radius: 15px 16px 15px 16px;
+    background-color: #0065fc;
+    color: white;
+    width: 10%;
+    height: 100%;
+    margin-left: -20px;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    display: inline;
+    visibility: visible;
+    box-shadow: 0px 60px 40px -7pxrgba (0, 0, 0, 0.2);
+  }
+  .searchButton {
+    display: none;
+    visibility: hidden;
+  }
 }
