@@ -278,6 +278,7 @@ input::placeholder {
   font-size: 18px;
   font-weight: 700;
   margin-top: 50px;
+  margin-left: 15px;
 }
 /****** Populaires ***********/
 .populaires {
@@ -324,6 +325,25 @@ input::placeholder {
   margin-bottom: 5px;
 }
 
+/***** Activité ****/
+.activite-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-left: 40px;
+}
+.activite {
+  display: flex;
+  justify-content: space-evenly;
+}
+.activite img {
+  width: 300px;
+  height: 380px;
+  margin: -5px;
+  border-radius: 20px 20px 0px 0px;
+}
+.activite .card-title {
+  margin-left: 10px;
+}
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
