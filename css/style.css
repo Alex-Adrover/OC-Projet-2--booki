@@ -18,39 +18,41 @@ body {
   margin: 0;
   box-sizing: border-box;
   font-family: "Raleway", sans-serif;
-}
-/****** header ***********/
-.main-container {
-  width: 100%;
   max-width: 1440px;
+  min-width: 320px;
   padding: 0 50px;
-  box-sizing: border-box;
   /****** centrer audela de 1440px ***********/
   margin-right: auto;
   margin-left: auto;
 }
-.headerContainer {
+/****** header ***********/
+.main-container {
+  max-width: 1440px;
+  min-width: 320px;
+}
+.header-container {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 .logo {
   height: 19px;
-  width: 61px;
-  margin-top: 20px;
+  width: 100%;
+  margin-top: 40%;
 }
 .links {
-  margin-top: 16px;
+  margin-top: 1em;
+  margin-right: 2vw;
 }
-.linkHeberge {
-  margin-right: 40px;
+.link-heberge {
+  margin-right: 5vw;
 }
-.linkActivite {
+.link-activite {
   font-weight: 400;
   font-family: "Raleway", sans-serif;
 }
-.linkHeberge:hover,
-.linkActivite:hover {
+.link-heberge:hover,
+.link-activite:hover {
   border-top: 2px solid #0065fc;
   padding-top: 13px;
   color: #0065fc;
@@ -60,23 +62,30 @@ a {
   text-decoration: none;
 }
 
-/****** Navigation ***********/
-.infoTitre h3 {
-  font-size: 22px;
+/****** Informations ***********/
+.informations {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.info-title h1 {
+  margin-top: 4%;
+  font-size: 1.3em;
   font-weight: 700;
 }
-.infoTitre p {
-  margin-top: -15px;
-  font-size: 16px;
+.info-title p {
+  margin-top: -0.5%;
+  margin-bottom: 8%;
+  font-size: 1em;
   font-weight: 400;
 }
 .section-title {
   margin: 0;
-  font-size: 22px;
+  font-size: 1.2em;
 }
 /****** bare de recherche ***********/
 
-.btnLogo {
+.btn-logo {
   background-color: #d9d9d9;
   width: 50px;
   height: 49px;
@@ -85,18 +94,18 @@ a {
 }
 .recherche {
   display: flex;
-  height: 49px;
-  margin-top: 35px;
-  margin-bottom: 35px;
+  height: 10%;
+  margin-top: 1.5vw;
+  margin-bottom: 3vw;
 }
-#rechercheMarseille {
-  font-size: 18px;
+#recherche-marseille {
+  font-size: 1.2em;
   opacity: 1;
   text-align: center;
   text-decoration: none;
   border: 1px solid #d9d9d9;
 }
-#rechercheMarseille-deux {
+#recherche-marseille-deux {
   display: none;
   visibility: hidden;
 }
@@ -105,13 +114,11 @@ input::placeholder {
   color: black;
   opacity: 1;
 }
-.searchButton {
+.search-button {
   border-radius: 0px 15px 15px 0px;
   background-color: #0065fc;
   color: white;
-  width: 131px;
-  height: 49px;
-  font-size: 18px;
+  font-size: 1.1em;
   font-weight: 700;
   border: none;
 }
@@ -121,67 +128,68 @@ input::placeholder {
 }
 
 /****** Filtres ********/
+
 .filtres {
-  margin-top: -50px;
   display: flex;
   align-content: start;
-  height: auto;
+  margin-top: -3%;
+  margin-bottom: 3%;
 }
-.filtreTitre {
-  align-content: center;
-  padding-top: 15px;
-  margin-top: 30px;
+.filtre-title {
+  margin-top: 3%;
 }
 
-.filtreListe {
+.filtre-list {
   list-style-type: none;
-  align-content: center;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 3%;
 }
-.filtreListe li {
+.filtre-list li {
   display: inline-flex;
-  padding-right: 20px;
+  margin-top: -1vw;
+  padding-right: 2vw;
 }
-.filtreListe i {
+.filtre-list i {
   padding-right: 10px;
 }
-.filtreListe button {
+.filtre-list button {
   background-color: transparent;
   padding: 15px 14px 15px 14px;
   border-radius: 25px;
   width: auto;
   border: 2px solid #d9d9d9;
   font-weight: 700;
-  font-size: 17px;
+  font-size: 1em;
   margin-left: -10px;
 }
 
-.filtreListe button:hover {
+.filtre-list button:hover {
   background-color: #deebff;
 }
-.infLogement {
+.info-logement {
   display: flex;
   height: 24px;
   margin-bottom: 40px;
 }
-.infLogo {
-  align-content: end;
-  justify-content: end;
+.paragraphe-container {
+  display: flex;
+  margin-bottom: 3%;
 }
-.btnInfLogo {
+
+.btn-info-logo {
   background-color: white;
   border: 1px solid #d9d9d9;
   border-radius: 20px;
 }
-.infParagraphe {
+.info-paragraphe {
   margin: -15px;
-  padding-left: 20px;
+  padding-left: 2.5%;
   height: auto;
-  font-size: 16px;
+  font-size: 1em;
   font-weight: 400;
   text-decoration: none;
 }
+
+/*** CARTES config **/
 .card {
   background-color: white;
   border-radius: 20px;
@@ -215,28 +223,35 @@ input::placeholder {
 .hebergements-and-populaires section {
   background-color: var(--main-bg-color);
   border-radius: 20px;
-  padding: 30px;
+  padding: 1.5%;
   box-sizing: border-box;
 }
 
 /****** Hebergements ***********/
+.hebergements a {
+  width: 30%;
+}
 .hebergements {
   width: 65%;
+  border: 2px;
+}
+#Hebergements {
+  margin-left: 3%;
 }
 .hebergements-cards {
   display: flex;
-  justify-content: space-evenly;
-  margin-right: -40px;
+  justify-content: space-between;
+  width: 95%;
 }
 .hebergements-cards .card {
-  display: flex;
-  margin-top: 33px;
-  width: 210px;
-  height: 190px;
-  margin-right: 45px;
+  margin-top: 14%;
+  margin-bottom: 10%;
+  width: 105%;
+  margin-right: 10%;
 }
+
 .hebergements-cards img {
-  width: 250px;
+  width: 100%;
   height: 100px;
   border-radius: 20px 20px 0px 0px;
 }
@@ -247,7 +262,6 @@ input::placeholder {
   padding-left: 15px;
   display: flex;
   justify-content: space-between;
-  box-sizing: border-box;
 }
 .hebergements-cardss .card-title {
   margin-top: 8px;
@@ -262,11 +276,11 @@ input::placeholder {
 .hebergements-cards .card-rating {
   margin-bottom: 5px;
 }
-.lien-affiché {
-  font-size: 18px;
+.lien-affiche-plus {
+  font-size: 1.2em;
   font-weight: 700;
-  margin-top: 50px;
-  margin-left: 15px;
+  margin-top: 2%;
+  margin-left: 3%;
 }
 /****** Populaires ***********/
 .populaires {
@@ -370,36 +384,22 @@ input::placeholder {
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
   body {
-    margin: -12px;
+    margin: 3%;
   }
-  .filtres {
-    margin-top: -50px;
-    display: flex;
-    flex-direction: column;
-    align-content: start;
-    height: auto;
+  .hebergements a {
+    width: 30%;
   }
-  .filtreListe button {
-    margin-left: -45px;
-    margin-right: 25px;
-  }
-  .search-logo {
-    display: none;
-    visibility: hidden;
-  }
-  .hebergements-and-populaires {
-    flex-direction: column;
-  }
-
   .hebergements {
     width: 100%;
   }
-
+  .hebergements-and-populaires {
+    flex-direction: column;
+    width: auto;
+  }
   .populaires {
     width: 100%;
     margin-top: 50px;
   }
-
   .populaires-cards {
     display: flex;
     flex-direction: row;
@@ -455,7 +455,7 @@ input::placeholder {
     margin-left: 100px;
     padding-right: 0px;
   }
-  #rechercheMarseille-deux {
+  #recherche-marseille-deux {
     display: none;
     visibility: hidden;
   }
@@ -463,97 +463,4 @@ input::placeholder {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-  body {
-    margin: -20px;
-    font-family: "Raleway", sans-serif;
-  }
-  /** HEADER **/
-  .headerContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 30%;
-    width: 105%;
-  }
-  .links {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    width: 120%;
-    height: 2em;
-    padding-top: 3%;
-    border-bottom: 2px solid #f2f2f2;
-    margin-left: -50px;
-    margin-right: -50px;
-    margin-top: -15px;
-    flex-wrap: nowrap;
-    font-size: 19px;
-  }
-  .logoContainer {
-    padding: 30px 0px 10px 0px;
-  }
-  .linkActivite:hover,
-  .linkHeberge:hover {
-    border-top: hidden;
-  }
-
-  /** PARTIE RECHERCHE **/
-  .infofmations {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-  .recherche {
-    width: 100%;
-  }
-  #rechercheMarseille {
-    font-size: 18px;
-    opacity: 1;
-    text-align: justify;
-    text-decoration: none;
-    border: 1px solid #d9d9d9;
-    width: 75%;
-    display: none;
-    visibility: hidden;
-  }
-  #rechercheMarseille-deux {
-    font-size: 18px;
-    opacity: 1;
-    text-align: justify;
-    text-decoration: none;
-    border: 1px solid #d9d9d9;
-    width: 75%;
-    display: inline;
-    visibility: visible;
-  }
-  .btnLogo {
-    width: 50px;
-    height: 49px;
-  }
-  input::placeholder {
-    width: 500px;
-    object-fit: cover;
-  }
-  .btnLogo {
-    width: 15%;
-    height: 100%;
-  }
-  .search-logo {
-    border-radius: 15px 16px 15px 16px;
-    background-color: #0065fc;
-    color: white;
-    width: 20%;
-    height: 100%;
-    margin-left: -20px;
-    font-size: 18px;
-    font-weight: 700;
-    border: none;
-    display: inline;
-    visibility: visible;
-    box-shadow: 0px 60px 40px -7pxrgba (0, 0, 0, 0.2);
-  }
-  .searchButton {
-    display: none;
-    visibility: hidden;
-  }
 }
